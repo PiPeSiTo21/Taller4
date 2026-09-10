@@ -1,9 +1,7 @@
 class PacienteRepository {
   constructor() {
     // Paciente inicial por defecto para pruebas
-    this.pacientes = [
-      new Paciente(1, "Carlos", "Pérez", "CC", "1061789456", "3001234567", "1995-05-10")
-    ];
+    this.pacientes = [];
   }
 
   agregar(paciente) {
