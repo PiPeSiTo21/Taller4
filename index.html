@@ -51,7 +51,6 @@
         </nav>
     </header>
 
-    <!-- Sección 1: Carrusel de Promociones -->
     <section class="container mb-5" id="seccionPromociones">
         <h2 class="mb-3">Promociones y Servicios</h2>
         <div id="carouselPromociones" class="carousel slide rounded overflow-hidden shadow-sm" data-bs-ride="carousel">
@@ -92,10 +91,8 @@
         </div>
     </section>
 
-    <!-- Sección 2: Layout con Lista Lateral de Especialidades y Grid de Médicos -->
     <section class="container mb-5" id="seccionEspecialidades">
         <div class="row">
-            <!-- Barra Lateral: List Group con descripción interactiva (col-12 col-md-4) -->
             <aside class="col-12 col-md-4 mb-4">
                 <h2>Especialidades</h2>
                 <div class="list-group" id="listaEspecialidades">
@@ -109,13 +106,10 @@
                 </div>
             </aside>
 
-            <!-- Sección de Médicos: Cards en Grid Responsive (col-12 col-md-8) -->
             <main class="col-12 col-md-8" id="seccionMedicos">
                 <h2>Nuestros Médicos</h2>
-                <!-- Adaptabilidad requerida: 1 col en xs, 2 en sm, 3 en md, 4 en lg -->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="contenedorTarjetasMedicos">
     
-                    <!-- Médico 1: Terapia Neural -->
                     <div class="col tarjeta-medico-item">
                         <div class="card h-100 shadow-sm">
                             <img src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9yfGVufDB8fDB8fHww" class="card-img-top" alt="Dr. Carlos Mendoza">
@@ -135,7 +129,6 @@
                         </div>
                     </div>
 
-                    <!-- Médico 2: Quiropraxia -->
                     <div class="col tarjeta-medico-item">
                         <div class="card h-100 shadow-sm">
                             <img src="https://img.magnific.com/foto-gratis/hermosa-joven-doctora-mirando-camara-oficina_1301-7781.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top" alt="Dra. María López">
@@ -155,7 +148,6 @@
                         </div>
                     </div>
 
-                    <!-- Médico 3: Fisioterapia -->
                     <div class="col tarjeta-medico-item">
                         <div class="card h-100 shadow-sm">
                             <img src="https://snibbs.co/cdn/shop/articles/What_are_the_Challenges_of_Being_a_Doctor.jpg?v=1684314843" class="card-img-top" alt="Dr. Juan Pérez">
@@ -175,7 +167,6 @@
                         </div>
                     </div>
 
-                    <!-- Médico 4: Nutrición y Dietética -->
                     <div class="col tarjeta-medico-item">
                         <div class="card h-100 shadow-sm">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfH2eegOv163oPJKlXRYjja1gQFJYBf51Zf3ftpTQgOYIBlHBLGKuTPCVu&s=10" class="card-img-top" alt="Dra. Ana Gómez">
@@ -217,7 +208,6 @@
                         </div>
 
                         <form id="formPaciente" class="w-100" novalidate>
-                            <!-- Fila 1: Documentos -->
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="tipoDocumentoPaciente" class="form-label fw-bold">Tipo de Documento:</label>
@@ -238,7 +228,6 @@
                                 </div>
                             </div>
 
-                            <!-- Fila 2: Nombres y Apellidos -->
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="nombresPaciente" class="form-label fw-bold">Nombres:</label>
@@ -253,7 +242,6 @@
                                 </div>
                             </div>
 
-                            <!-- Fila 3: Teléfono y Fecha de Nacimiento -->
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="telefonoPaciente" class="form-label fw-bold">Teléfono de Contacto:</label>
@@ -298,7 +286,6 @@
         </div>
     </section>
 
-    <!-- Modal para Agendar Cita desde la Tarjeta Médica -->
     <div class="modal fade" id="modalAgendarCita" tabindex="-1" aria-labelledby="modalAgendarCitaLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -344,7 +331,6 @@
         <div class="container">
             <div class="row g-4">
                 
-                <!-- Columna 1: Información -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="fw-bold text-primary mb-3">
                         <i class="fas fa-clinic-medical me-2"></i>Centro Médico Vital
@@ -354,7 +340,6 @@
                     </p>
                 </div>
 
-                <!-- Columna 2: Horarios de Atención -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="fw-bold text-white mb-3">
                         <i class="fas fa-clock text-primary me-2"></i>Horarios
@@ -366,7 +351,6 @@
                     </ul>
                 </div>
 
-                <!-- Columna 3: Contacto -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="fw-bold text-white mb-3">
                         <i class="fas fa-headset text-primary me-2"></i>Contacto
@@ -387,7 +371,6 @@
                     </ul>
                 </div>
 
-                <!-- Columna 4: Redes Sociales -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <h5 class="fw-bold text-white mb-3">Síguenos en Redes</h5>
                     <p class="small text-white-50 mb-3">Entérate de nuestras jornadas médicas y promociones:</p>
@@ -408,7 +391,6 @@
 
             <hr class="my-4 border-secondary opacity-50">
 
-            <!-- Pie de página inferior -->
             <div class="row align-items-center small text-white-50">
                 <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
                     &copy; 2026 Centro Médico Vital. Todos los derechos reservados.
