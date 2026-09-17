@@ -14,31 +14,42 @@
 <body>
     <div id="notificaciones" class="notificaciones-contenedor"></div>
 
-    <!-- Encabezado Académico Original -->
-    <header class="header-academico">
-        <h1>Sistema de Agendamiento de Citas Médicas</h1>
-        <p>Universidad del Cauca</p>
-        <p>Taller 4 — Uso de bootstrap para hacer paginas responsivas y con estilos</p>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm py-2">
+            <div class="container">
+                
+                <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="#">
+                    <i class="fas fa-clinic-medical me-2"></i> Centro Médico Vital
+                </a>
 
-    <!-- Barra de Navegación Responsive (Breakpoint md) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 rounded container">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-hospital-user me-2"></i>Clínica Unicauca</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarClinica" aria-controls="navbarClinica" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarClinica">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#seccionPromociones">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#seccionEspecialidades">Especialidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#seccionMedicos">Médicos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#seccionRegistros">Registros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#seccionCitas">Citas Registradas</a></li>
-                </ul>
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+               
+                <div class="collapse navbar-collapse" id="navbarContenido">
+                    <ul class="navbar-brand navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccionMedicos"><i class="fas fa-user-md me-1"></i> Especialistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seccionRegistros"><i class="fas fa-user-plus me-1"></i> Registro</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex ms-md-3 gap-2 mt-2 mt-md-0">
+                        <a href="https://facebook.com" target="_blank" class="text-white fs-5 px-1"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="text-white fs-5 px-1"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" class="text-white fs-5 px-1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Sección 1: Carrusel de Promociones -->
     <section class="container mb-5" id="seccionPromociones">
@@ -329,10 +340,84 @@
         </div>
     </div>
 
-    <!-- Pie de página académico intacto -->
-    <footer class="footer-academico">
-        <p>Ingeniería del Software III — Ejemplo de arquitectura en capas</p>
-        <p>&copy; 2026 Universidad del Cauca. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-light pt-5 pb-4 mt-5 border-top border-primary border-3">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Columna 1: Información -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-primary mb-3">
+                        <i class="fas fa-clinic-medical me-2"></i>Centro Médico Vital
+                    </h5>
+                    <p class="small text-white-50">
+                        Atención médica especializada e integral con los mejores profesionales comprometidos con tu bienestar.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Horarios de Atención -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-white mb-3">
+                        <i class="fas fa-clock text-primary me-2"></i>Horarios
+                    </h5>
+                    <ul class="list-unstyled small text-white-50 mb-0">
+                        <li class="mb-2"><strong class="text-white">Lunes a Viernes:</strong> 7:00 AM - 7:00 PM</li>
+                        <li class="mb-2"><strong class="text-white">Sábados:</strong> 8:00 AM - 2:00 PM</li>
+                        <li><strong class="text-white">Urgencias:</strong> Atención 24/7</li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-white mb-3">
+                        <i class="fas fa-headset text-primary me-2"></i>Contacto
+                    </h5>
+                    <ul class="list-unstyled small text-white-50 mb-0">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span>Calle 5 # 4-12, Popayán</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <span>+57 (602) 833 9000</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span>contacto@centromedicovital.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Redes Sociales -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-bold text-white mb-3">Síguenos en Redes</h5>
+                    <p class="small text-white-50 mb-3">Entérate de nuestras jornadas médicas y promociones:</p>
+                    <div class="d-flex gap-2">
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 38px; height: 38px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4 border-secondary opacity-50">
+
+            <!-- Pie de página inferior -->
+            <div class="row align-items-center small text-white-50">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    &copy; 2026 Centro Médico Vital. Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span>Taller 4 - Desarrollo Web</span>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
